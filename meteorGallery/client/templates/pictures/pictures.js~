@@ -1,0 +1,10 @@
+Template.Pictures.helpers({
+	pictures: function(limit){
+var arr = [];
+for(var i = 0; i < limit; i++){
+	array.push('http://lorempixel.com/' + _.random(300, 400) + '/' + _.random(300, 400)
+}
+	return array;
+	
+	}
+});

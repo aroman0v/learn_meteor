@@ -1,0 +1,17 @@
+<head>
+	<title>Reactive Gallery</title>
+</head>
+
+<body>
+	<h2>Reactive Gallery</h2>
+	{{> Pictures}}
+
+</body>
+
+<template name="Pictures">
+
+{{#each pictures}}
+	<img src="{{this}}" alt="img" />
+{{/each}}
+
+</template>

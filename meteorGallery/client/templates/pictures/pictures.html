@@ -1,0 +1,31 @@
+<template name="PictureS">
+
+    {{#each pictures 10}}
+    {{> Picture}}
+    {{/each}}
+
+</template>
+
+<template name="Picture">
+    <figure class="image clickable" data-toggle="modal" data-target="#myModal-{{_id}}">
+        <div class="image-container">
+            <img src="{{src}}" alt="img" />
+        </div>
+        <footer class="title">{{title}}</footer>
+    </figure>
+
+    <div class="modal fade" id="myModal-{{_id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <figure class="image clickable" data-toggle="modal" data-target="#myModal-{{_id}}">
+                    <div class="image-container">
+                        <img src="{{src}}" alt="img" />
+                    </div>
+                    <footer class="title">{{title}}</footer>
+                </figure>
+
+            </div>
+        </div>
+    </div>
+</template>

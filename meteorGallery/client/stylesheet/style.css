@@ -1,0 +1,128 @@
+
+.simple-gallery {
+    padding-top: 15px;
+    letter-spacing: 1px;
+    -webkit-columns: 7 250px;
+    -webkit-columns: 250px;
+    -moz-columns: 7 250px;
+    columns: 7 250px;
+    -webkit-column-gap: 0.3em;
+    -moz-column-gap: 0.3em;
+    column-gap: 0.3em;
+}
+
+.simple-gallery a, .simple-gallery a:hover {
+    color: #61B6DA;
+}
+
+.simple-gallery a, .simple-gallery a:hover {
+    color: #61B6DA;
+}
+
+.simple-gallery .menu {
+    display: table;
+    width: 100%;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid-column;
+}
+
+.simple-gallery .menu > h1 {
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+}
+
+.simple-gallery .image .image-container img {
+    width: 100%;
+}
+
+.simple-gallery h1, .simple-gallery h2, .simple-gallery h3 {
+    background-color: #000;
+    color: #fff;
+    font-family: inherit;
+    font-weight: 100;
+    text-align: center;
+}
+
+.simple-gallery h1 {
+    padding: 18px;
+}
+
+.simple-gallery h2, .simple-gallery h3 {
+    padding: 6px;
+}
+
+.simple-gallery .image, .simple-gallery h1, .simple-gallery h2, .simple-gallery h3 {
+    display: table;
+    width: 100%;
+    margin: 0 0 4px 0;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid-column;
+}
+
+.simple-gallery .image.clickable {
+    cursor: pointer;
+}
+
+.simple-gallery .image.clickable:hover {
+    opacity: 0.8;
+}
+
+.simple-gallery .image .image-container {
+    position: relative;
+}
+
+.simple-gallery .image .title {
+    background: #000;
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+    font-family: inherit;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.simple-gallery .image.clickable:hover .image-container::before, .simple-gallery .modal .image.clickable:hover .image-container::before {
+    font-family: 'Glyphicons Halflings';
+    position: absolute;
+    font-size: 70px;
+    color: rgba(255, 255, 255, 0.5);
+    left: 50%;
+    top: 50%;
+    margin-left: -35px;
+    margin-top: -50px;
+}
+
+.simple-gallery .image.clickable:hover .image-container::before {
+    content: "\2b";
+}
+
+.simple-gallery .modal .image.clickable:hover .image-container::before {
+    content:"\2212";
+}
+
+.simple-gallery .modal .modal-dialog {
+    width: 340px;
+}
+
+.simple-gallery .modal .modal-content {
+    border-radius: 0;
+}
+
+@media (max-width: 768px) {
+    .simple-gallery .modal .modal-dialog {
+        margin: 0 auto;
+    }
+}
+
+.simple-gallery .modal .image {
+    margin: 0;
+}
+
+.load-more-container {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
